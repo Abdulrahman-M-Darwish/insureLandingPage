@@ -1,0 +1,55 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font: {
+    size: $Fontsize;
+    weight: 400;
+    family: $Karla;
+  }
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+  font: {
+    family: $Sans;
+    weight: 700;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.center-xs {
+  @include maxMedia(767) {
+    text-align: center;
+  }
+}
+
+p {
+  line-height: 1.7;
+}
+
+.btn {
+  border: 2px solid $VeryDarkViolet;
+  text-decoration: none;
+  color: $VeryDarkViolet;
+  transition: 0.2s;
+  padding: 10px 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block;
+  width: fit-content;
+}

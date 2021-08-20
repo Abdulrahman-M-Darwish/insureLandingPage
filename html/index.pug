@@ -1,0 +1,116 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png")
+    link(rel="stylesheet", href="./css/vendor/normalize.css")
+    link(rel="stylesheet", href="./css/style.css")
+    title Insure landing page
+  body
+    .page
+      header
+        include ./layout/nav.pug
+        section.landing
+          picture
+            source(media="(min-width: 768px)", srcset="./images/bg-pattern-intro-right-desktop.svg")
+            img.pattern(src="./images/bg-pattern-intro-right-mobile.svg", alt="pattern")
+          picture
+            source(media="(min-width: 768px)", srcset="./images/bg-pattern-intro-left-desktop.svg")
+            img.pattern-l(src="./images/bg-pattern-intro-left-mobile.svg", alt="pattern")
+          .container
+            .text.col.center-xs
+              h1 Humanizing #[br] your insurance.
+              p Get your life insurance coverage easier and faster. We blend our expertise and technology to help you find the plan that’s right for you. Ensure you and your loved ones are protected.
+              a.btn(href="#plans") View plans
+              img.pattern(src="./images/bg-pattern-intro-left-mobile.svg", alt="pattern")
+            .img.col
+              picture
+                source(media="(min-width: 768px)", srcset="./images/image-intro-desktop.jpg")
+                img.svg(src="./images/image-intro-mobile.jpg", alt="intro landing page")
+      section.features#plans
+        .container
+          .header.center-xs
+            h2 We’re different
+          .features-content
+            .feat.center-xs
+              img(src="./images/icon-snappy-process.svg", alt="Snappy Process")
+              h3 Snappy Process
+              p Our application process can be completed in minutes, not hours. Don’t get stuck filling in tedious forms.
+            .feat.center-xs
+              img(src="./images/icon-affordable-prices.svg", alt="Affordable Prices")
+              h3 Affordable Prices
+              p We don’t want you worrying about high monthly costs. Our prices may be low, but we still offer the best coverage possible
+            .feat.center-xs
+              img(src="./images/icon-people-first.svg", alt="People First")
+              h3 People First
+              p Our plans aren’t full of conditions and clauses to prevent payouts. We make sure you’re covered when you need it.
+      section.work#work
+        .container
+          .cont.center-xs
+            h2 Find out more #[br]  about how we work
+            a.btn(href="#") how we work
+            picture
+              source(media="(min-width: 768px)", srcset="./images/bg-pattern-how-we-work-desktop.svg")
+              img.pattern(src="./images/bg-pattern-how-we-work-mobile.svg", alt="patter")
+      include ./layout/footer.pug
+    script(src="./js/main.js") 
+
+  //- How we work
+  //- Blog
+  //- Account
+  //- View plans
+
+  //- Humanizing your insurance.
+
+  //- Get your life insurance coverage easier and faster. We blend our expertise and technology to help you find the plan that’s right for you. Ensure you and your loved ones are protected.
+
+  //- View plans
+
+  //- We’re different
+
+  //- Snappy Process
+
+  //- Our application process can be completed in minutes, not hours. Don’t get 
+  //- stuck filling in tedious forms.
+
+  //- Affordable Prices
+
+  //- We don’t want you worrying about high monthly costs. Our prices may be low, 
+  //- but we still offer the best coverage possible.
+
+  //- People First
+
+  //- Our plans aren’t full of conditions and clauses to prevent payouts. We make 
+  //- sure you’re covered when you need it.
+
+  //- Find out more about how we work
+
+  //- How we work
+
+  //- Our company
+
+  //- How we work
+  //- Why Insure?
+  //- View plans
+  //- Reviews
+
+  //- Help me
+
+  //- FAQ
+  //- Terms of use
+  //- Privacy policy
+  //- Cookies
+
+  //- Contact
+
+  //- Sales
+  //- Support
+  //- Live chat
+
+  //- Others
+
+  //- Careers
+  //- Press
+  //- Licenses

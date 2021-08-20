@@ -1,0 +1,66 @@
+footer {
+  background-color: $VeryLightGray;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+  picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .container {
+    .heading-area {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background-color: rgba($color: $DarkGrayishViolet, $alpha: 0.5);
+        bottom: -40px;
+      }
+      .socila {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        svg:hover path {
+          transition: 0.2s;
+          fill: $VeryDarkViolet;
+        }
+      }
+    }
+    .links-area {
+      padding-top: 80px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px 0px;
+      @include maxMedia(767) {
+        justify-content: center;
+      }
+      section {
+        h2 {
+          font-size: 0.9em;
+          font-family: $Karla;
+          text-transform: uppercase;
+          color: $DarkGrayishViolet;
+          margin-bottom: 30px;
+        }
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          li {
+            font-weight: 700;
+            text-transform: uppercase;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}
